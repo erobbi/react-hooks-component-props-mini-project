@@ -18,11 +18,6 @@ function App() {
       <Header />
       <About image = {lukeURL} alt = {lukeAlt}/>
       <ArticleList />
-      {/* // header.js */}
-      {/* // about.js
-      // articlelist.js
-          //child article.js
-      // bonus */}
     </div>
   );
 }
