@@ -4,20 +4,18 @@ import Header from "./Header.js"
 import About from "./About.js"
 import ArticleList from "./ArticleList"
 
-const lukeURL = 'https://images.squarespace-cdn.com/content/v1/606565ca16d89a5965d7f646/1617258625839-RNR1PG1F9N0JR7KTGXQA/NY+Xpro+Ektachrome3-positive.jpg?format=750w'
-const lukeAlt = 'a picture of Luke'
-
-
-console.log(blogData);
+// const lukeURL = 'https://images.squarespace-cdn.com/content/v1/606565ca16d89a5965d7f646/1617258625839-RNR1PG1F9N0JR7KTGXQA/NY+Xpro+Ektachrome3-positive.jpg?format=750w'
+// const lukeAlt = 'a picture of Luke'
+console.log(blogData)
 
 function App() {
   return (
     <div className="App">
       You're on your own from here! Follow the deliverables; test things out in
       the browser as you write your code; and good luck!
-      <Header />
-      <About image = {lukeURL} alt = {lukeAlt}/>
-      <ArticleList />
+      <Header name = {blogData.name} />
+      <About image = {blogData.image} about = {blogData.about} />
+      <ArticleList posts = {blogData.posts} />
     </div>
   );
 }
