@@ -1,18 +1,17 @@
 import Article from "./Article";
-import Data from "../data/blog";
+import blogData from "../data/blog";
 
-console.log(Data)
-console.log(Data.posts)
+console.log(blogData)
+console.log(blogData.posts)
 
-const posts = Data.posts
+const posts = blogData.posts
 
 function ArticleList() {
-    return (
-        <main>
-            <h4>test article</h4>
-            <Article title = 'My Finnish Skinny dipping story' date = 'March 31st 2019' preview = 'It was a cold evening...'/>
-        </main>
-    )
+    return (posts.map(post => {
+        console.log(post)
+
+    }))
+
 }
 
 export default ArticleList
