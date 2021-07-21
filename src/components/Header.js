@@ -1,10 +1,10 @@
 
 
-function Header() {
+function Header({name}) {
     return (
       <header>
           <h1>
-              Luke's Awesome Blog
+              {name}
           </h1>
       </header> 
     )

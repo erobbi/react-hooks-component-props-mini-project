@@ -1,22 +1,19 @@
 
-
-function Article(props) {
+function Article({title, date = 'January 1, 1970', preview}) {
     return (
         <article>
             <h3>
-                {props.title}
+                {title}
             </h3>
             <small>
-                {props.date}
+                {date}
             </small>
             <p>
-                {props.preview}
+                {preview}
             </p>
         </article>
 
     )
 }
-
-
 
 export default Article

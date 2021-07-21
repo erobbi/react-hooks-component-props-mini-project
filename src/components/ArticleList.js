@@ -1,7 +1,5 @@
 import Article from "./Article";
 
-
-
 function ArticleList({ posts }) {
   return (
     <main>
@@ -17,6 +15,5 @@ function ArticleList({ posts }) {
     </main>
   );
 }
-
 
 export default ArticleList
