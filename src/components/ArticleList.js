@@ -9,6 +9,7 @@ const posts = blogData.posts
 function ArticleList() {
     return (posts.map(post => {
         console.log(post)
+        Art
 
     }))
 

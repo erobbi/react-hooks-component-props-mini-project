@@ -1,23 +1,21 @@
 
-import blogData from "../data/blog";
 
-function Article(prop) {
+function Article(props) {
     return (
-        blogData.posts.map(e => {
-            return (<article>
-                <h3>
-                    {e.title}
-                </h3>
-                <small>
-                    {e.date}
-                </small>
-                <p>
-                    {e.preview}
-                </p>
-            </article>
+        <article>
+            <h3>
+                {props.title}
+            </h3>
+            <small>
+                {props.date}
+            </small>
+            <p>
+                {props.preview}
+            </p>
+        </article>
 
-            )
-        }
+    )
+}
 
         )
 
